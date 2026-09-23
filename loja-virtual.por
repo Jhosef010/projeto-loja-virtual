@@ -144,3 +144,40 @@ programa{
          escreva("--- ALTERAR QUANTIDADE NO CARRINHO ---\n\n")
          escreva("1. Camisa Esportiva (No Carrinho: ", qtd_carrinho_prod1, ")\n")
          escreva("2. Boné Casual       (No Carrinho: ",qtd_carrinho_prod2, ")\n")
+
+
+         escreva("3. Tênis de Corrida  (No Carrinho: ", qtd_carrinho_prod3, ")\n\n")
+         escreva("Escolha o item que deseja alterar: ")
+         leia(opcao_crud)
+         escreva("Digite a NOVA quantidade total desejada no carrinho: ")
+         leia(quantidade_temp)
+
+
+         // Devolve o estoque antigo primeiro para recalcular
+         
+
+
+se (opcao_crud == 1) {
+           estoque_prod1 = estoque_prod1 + qtd_carrinho_prod1
+           se (quantidade_temp >= 0 e quantidade_temp <= estoque_prod1) {
+             qtd_carrinho_prod1 = quantidade_temp
+             estoque_prod1 = estoque_prod1 - quantidade_temp
+             escreva("\nQuantidade atualizada!\n")
+         
+
+
+
+
+
+
+
+
+  } senao {
+             estoque_prod1 = estoque_prod1 - qtd_carrinho_prod1 
+// desfaz alteração
+             escreva("\nQuantidade indisponível no estoque!\n")
+           }
+         } senao se (opcao_crud == 2) {
+           estoque_prod2 = estoque_prod2 + qtd_carrinho_prod2
+           se (quantidade_temp >= 0 e quantidade_temp <= estoque_prod2) {
+

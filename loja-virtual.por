@@ -131,9 +131,16 @@ programa{
          escreva("-----------------------------------------------------\n")
          escreva("VALOR TOTAL PARCIAL: R$ ", valor_total_bruto, "\n\n")
 
+               escreva("Pressione ENTER para voltar ao menu...")
+         leia(tecla_pausa)
+         pare
 
 
-
-
-
-
+       // ====================================================
+       // U - UPDATE (Alterar Quantidade)
+       // ====================================================
+       caso 3:
+         limpa()
+         escreva("--- ALTERAR QUANTIDADE NO CARRINHO ---\n\n")
+         escreva("1. Camisa Esportiva (No Carrinho: ", qtd_carrinho_prod1, ")\n")
+         escreva("2. Boné Casual       (No Carrinho: ",qtd_carrinho_prod2, ")\n")

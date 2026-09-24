@@ -216,3 +216,39 @@ se (opcao_crud == 1) {
        // D - DELETE (Remover Item do Carrinho)
        // ====================================================
        caso 4:
+                limpa()
+         escreva("--- REMOVER ITEM DO CARRINHO ---\n\n")
+         escreva("1. Remover todas as Camisas\n")
+
+
+
+
+         escreva("2. Remover todos os Bonés\n")
+         escreva("3. Remover todos os Tênis\n\n")
+         escreva("Escolha qual produto remover completamente: ")
+         leia(opcao_crud)
+
+
+         se (opcao_crud == 1) {
+           estoque_prod1 = estoque_prod1 + qtd_carrinho_prod1
+           qtd_carrinho_prod1 = 0
+           escreva("\nProduto removido do carrinho!\n")
+         } senao se (opcao_crud == 2) {
+           estoque_prod2 = estoque_prod2 + qtd_carrinho_prod2
+           qtd_carrinho_prod2 = 0
+           escreva("\nProduto removido do carrinho!\n")
+         } senao se (opcao_crud == 3) {
+           estoque_prod3 = estoque_prod3 + qtd_carrinho_prod3
+           qtd_carrinho_prod3 = 0
+           escreva("\nProduto removido do carrinho!\n")
+         } senao {
+           escreva("\nOpção inválida!\n")
+         }
+
+
+         escreva("\nPressione ENTER para voltar ao menu...")
+         leia(tecla_pausa)
+         pare
+
+
+

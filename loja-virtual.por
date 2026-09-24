@@ -261,6 +261,12 @@ se (opcao_crud == 1) {
          leia(tecla_pausa)
      }
    }
+      // ==========================================
+   // TELA DE PAGAMENTO
+   // ==========================================
+   limpa()
+   valor_total_bruto = (qtd_carrinho_prod1 * preco_prod1) + (qtd_carrinho_prod2 * preco_prod2) + (qtd_carrinho_prod3 * preco_prod3)
+
 
 
 

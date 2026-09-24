@@ -250,5 +250,18 @@ se (opcao_crud == 1) {
          leia(tecla_pausa)
          pare
 
+       caso 0:
+         // Sai do laço e vai direto para a tela de pagamento abaixo
+         pare
+
+
+       caso contrario:
+         escreva("\nOpção Inválida! Tente novamente.\n")
+         escreva("Pressione ENTER para continuar...")
+         leia(tecla_pausa)
+     }
+   }
+
+
 
 

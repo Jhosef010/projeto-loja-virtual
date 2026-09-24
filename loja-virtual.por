@@ -189,3 +189,30 @@ se (opcao_crud == 1) {
 
              escreva("\nQuantidade indisponível no estoque!\n")
            }
+              } senao se (opcao_crud == 3) {
+           estoque_prod3 = estoque_prod3 + qtd_carrinho_prod3
+           se (quantidade_temp >= 0 e quantidade_temp <= estoque_prod3) {
+             qtd_carrinho_prod3 = quantidade_temp
+             estoque_prod3 = estoque_prod3 - quantidade_temp
+             escreva("\nQuantidade atualizada!\n")
+
+
+           } senao {
+             estoque_prod3 = estoque_prod3 - qtd_carrinho_prod3
+             escreva("\nQuantidade indisponível no estoque!\n")
+           }
+         }
+
+
+         escreva("\nPressione ENTER para voltar ao menu...")
+        
+
+
+         leia(tecla_pausa)
+         pare
+
+
+       // ====================================================
+       // D - DELETE (Remover Item do Carrinho)
+       // ====================================================
+       caso 4:

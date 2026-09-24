@@ -174,7 +174,7 @@ se (opcao_crud == 1) {
 
   } senao {
              estoque_prod1 = estoque_prod1 - qtd_carrinho_prod1 
-// desfaz alteração
+             // desfaz alteração
              escreva("\nQuantidade indisponível no estoque!\n")
            }
          } senao se (opcao_crud == 2) {
@@ -189,7 +189,3 @@ se (opcao_crud == 1) {
 
              escreva("\nQuantidade indisponível no estoque!\n")
            }
-
-
-
-

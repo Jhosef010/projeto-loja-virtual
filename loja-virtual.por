@@ -266,8 +266,8 @@ se (opcao_crud == 1) {
    // ==========================================
    limpa()
    valor_total_bruto = (qtd_carrinho_prod1 * preco_prod1) + (qtd_carrinho_prod2 * preco_prod2) + (qtd_carrinho_prod3 * preco_prod3)
-
-
-
-
-
+     se (valor_total_bruto == 0) {
+     escreva("Você não comprou nenhum produto. Obrigado por visitar nossa loja!\n")
+   } senao {
+     escreva("=== TELA DE PAGAMENTO ===\n\n")
+     escreva("Valor total da compra: R$ ", valor_total_bruto, "\n\n")

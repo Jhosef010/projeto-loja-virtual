@@ -282,3 +282,15 @@ se (opcao_crud == 1) {
        valor_desconto = valor_total_bruto * 0.10
        valor_final = valor_total_bruto - valor_desconto
 
+        escreva("\nDesconto aplicado: R$ ", valor_desconto, "\n")
+     } senao {
+       valor_desconto = 0.0
+       valor_final = valor_total_bruto
+       escreva("\nPagamento no cartão selecionado.\n")
+     }
+
+
+     escreva("\nPressione ENTER para gerar a Nota Fiscal...")
+     leia(tecla_pausa)
+
+

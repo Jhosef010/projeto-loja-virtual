@@ -294,3 +294,19 @@ se (opcao_crud == 1) {
      leia(tecla_pausa)
 
 
+     // ==========================================
+     // NOTA FISCAL DETALHADA
+     // ==========================================
+     limpa()
+     escreva("==================================================\n")
+     escreva("           NOTA FISCAL - LOJA VIRTUAL             \n")
+     escreva("==================================================\n\n")
+     escreva("Itens comprados:\n")
+
+
+     se (qtd_carrinho_prod1 > 0) {
+       escreva("- ", qtd_carrinho_prod1, "x Camisa Esportiva = R$ ", (qtd_carrinho_prod1 * preco_prod1), "\n")
+     }
+
+
+
